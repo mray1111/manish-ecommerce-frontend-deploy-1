@@ -1,0 +1,249 @@
+.productsHeading {
+  margin: 2vmax auto;
+  width: 15vw;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+  padding: 2vmax;
+  color: rgba(0, 0, 0, 0.678);
+  font-weight: 500;
+  font-size: 1.5vmax;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+}
+
+
+.products {
+  width: 70%;
+  display: flex;
+  padding: 0 5vmax;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* .filterBox {
+  width: 30%;
+  padding: 0 2vmax;
+} */
+.filterBox {
+  /* Your existing styles for the filter box */
+  background-color: #f2f2f2;
+  padding: 20px;
+  /* Add the following styles to position the "Filter Off" button */
+  position: relative;
+}
+
+.clearFiltersButton {
+  /* Styles for the "Filter Off" button */
+  background-color: #ff5733;
+  color: #fff;
+  border: none;
+  size: 5px;
+  padding: 15px 20px;
+  cursor: pointer;
+  position: absolute;
+  top: 600px; /* Adjust the top and right values as needed */
+ /*  right: 200px; */
+  left :100px
+}
+.paginationBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 6vmax;
+  /* Additional styles to ensure centering */
+  height: 100%;
+  width: 100%;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  /* Additional styles to ensure centering */
+  list-style: none;
+}.pagination li {
+  font-size: 18px; /* Adjust the font size as needed */
+  font-weight: bold;
+  margin: 0 5px; /* Adjust the spacing between buttons */
+}
+
+
+.page-item {
+  background-color: rgb(255, 255, 255);
+  list-style: none;
+  border: 1px solid rgba(0, 0, 0, 0.178);
+  padding: 1vmax 1.5vmax;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.page-item:first-child {
+  border-radius: 5px 0 0 5px;
+}
+
+.page-item:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+.page-link {
+  text-decoration: none;
+  font: 300 0.7vmax "Roboto";
+  color: rgb(80, 80, 80);
+  transition: all 0.3s;
+}
+
+.pageItemActive {
+  background-color: rgb(251, 38, 1);
+}
+
+.pageLinkActive {
+  color: white;
+}
+
+.page-item:hover {
+  background-color: rgb(230, 230, 230);
+}
+
+.page-item:hover .page-link {
+  color: rgb(0, 0, 0);
+}
+
+.filterBox {
+  width: 150px;
+  position: absolute;
+  top: 10vmax;
+  left: 3vmax;
+}
+
+.category-link {
+  list-style: none;
+  color: rgba(0, 0, 0, 0.61);
+  font: 400 0.8vmax "Roboto";
+  margin: 0.4vmax;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.category-link:hover {
+  color: tomato;
+}
+
+.categoryBox {
+  padding: 0%;
+}
+
+.filterBox > fieldset {
+  border: 1px solid rgba(0, 0, 0, 0.811);
+}
+
+/* @media screen and (max-width: 600px) {
+  .filterBox {
+    width: 30vw;
+    position: static;
+    margin: auto;
+  }
+
+  .page-link {
+    font: 300 1.7vmax "Roboto";
+  }
+} */
+
+
+
+
+@media screen and (max-width: 400px) {
+  /* Adjust the Product Heading */
+  .productsHeading {
+    margin: 2vmax auto;
+    width: 80vw; /* Narrower width */
+    font-size: 5vmax; /* Larger text for readability */
+    padding: 2vmax;
+  }
+
+  /* Adjust Products Container */
+  .products {
+    width: 60vw;
+    margin-left: 142px; /* Full width */
+    padding: 0;
+    flex-direction: column; /* Stack products vertically */
+    justify-content: center;
+  }
+
+
+
+  /* Adjust Category Links */
+  .categoryBox {
+    padding: 0;
+    text-align: center; /* Center category links */
+  }
+  
+  .category-link {
+    font-size: 3.5vmax; /* Increase size for smaller screens */
+    margin: 1vmax 0;
+  }
+
+  /* Adjust Price and Rating Sliders */
+  .MuiSlider-root {
+    width: 80vw; /* Adjust slider width */
+    margin: 1vmax auto;
+  }
+
+  /* Adjust Pagination */
+  .paginationBox {
+    width: 100%;
+    margin: 4vmax 0;
+  }
+  
+  .page-item {
+    padding: 1vmax 2vmax;
+    font-size: 4vmax; /* Increase button size */
+  }
+  
+  .page-link {
+    font-size: 4vmax; /* Increase link font size */
+  }
+  
+  /* Filter Off Button */
+  .clearFiltersButton {
+    font-size: 3.5vmax; /* Increase button font size */
+    padding: 1.5vmax 3vmax;
+    margin: 3vmax auto;
+    display: block;
+  }
+ 
+@media screen and (min-width:450px) {
+    .productCard>img{
+    width: 53vmax;
+  }
+}
+  .container{
+    overflow: hidden;
+  }
+  .input-box{
+    font-size: 15px
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .filterBox {
+    position: relative;
+    top: -15px;
+    left: -159px;
+    width: 112px;
+  }
+
+  /* here is a bug= if 197 px then products page correct but home page incorrect  */
+  .products> .productCard{
+    margin-left: 197px;
+  }
+  .pagination{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+    left: 174px;
+  }
+  .ratings-above{
+    font-size: 12px;
+  }
+}
+

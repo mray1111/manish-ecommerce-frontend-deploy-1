@@ -1,0 +1,137 @@
+.orderDetailsPage {
+  background-color:white;
+  margin-left: 3cm; /* Shift 2cm to the right */
+}
+
+.orderDetailsContainer > h1 {
+  font: 500 2.5rem "BoldFont", "Roboto", "sans-serif";
+  margin: 1rem 0;
+  color: white;
+}
+
+.orderDetailsContainer {
+  padding: 2rem;
+  padding-bottom: 0;
+  overflow: hidden;
+  background: white;
+}
+
+.orderDetailsContainer > p {
+  font: 400 1rem "Roboto";
+}
+
+.orderDetailsContainerBox,
+.orderDetailsCartItemsContainer {
+  margin: 1rem;
+}
+
+.orderDetailsContainerBox > div {
+  display: flex;
+  margin: 0.5rem 0;
+}
+
+.orderDetailsContainerBox > div > p {
+  font: 400 0.9rem "Roboto";
+  color: black;
+}
+
+.orderDetailsContainerBox > div > span {
+  margin: 0 0.5rem;
+  font: 100 0.9rem "Roboto";
+  color: #575757;
+}
+
+.orderDetailsCartItems > p {
+  font: 400 1rem "Roboto";
+}
+
+.orderDetailsCartItems {
+  padding: 1rem 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.164);
+}
+
+.orderDetailsCartItemsContainer > div {
+  display: flex;
+  font: 400 0.9rem "Roboto";
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.orderDetailsCartItemsContainer > div > img {
+  width: 3rem;
+}
+
+.orderDetailsCartItemsContainer > div > a {
+  color: #575757;
+  margin: 0 1rem;
+  width: 60%;
+  text-decoration: none;
+}
+
+.orderDetailsCartItemsContainer > div > span {
+  font: 100 0.9rem "Roboto";
+  color: #5e5e5e;
+}
+
+
+@media screen and (max-width: 400px) {
+  .orderDetailsPage {
+    margin-left: 0; /* Remove the margin to fit the screen */
+    padding: 0 2vw; /* Add padding to the sides */
+    background-color: white;
+  }
+
+  .orderDetailsContainer {
+    padding: 1rem; /* Reduce padding */
+    text-align: center; /* Center content for smaller screens */
+  }
+
+  .orderDetailsContainer > h1 {
+    font-size: 1.8rem; /* Reduce heading font size */
+    margin: 0.5rem 0; /* Reduce margin */
+  }
+
+  .orderDetailsContainerBox {
+    margin: 0.5rem 0; /* Reduce box margin */
+  }
+
+  .orderDetailsContainerBox > div {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align text to start */
+  }
+
+  .orderDetailsContainerBox > div > p,
+  .orderDetailsContainerBox > div > span {
+    font-size: 0.8rem; /* Reduce text size */
+    margin: 0.2rem 0; /* Reduce margins */
+  }
+
+  .orderDetailsCartItems {
+    padding: 1rem; /* Adjust padding */
+  }
+
+  .orderDetailsCartItemsContainer > div {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to start */
+    font-size: 0.8rem; /* Reduce text size */
+    margin: 0.5rem 0; /* Reduce margin */
+  }
+
+  .orderDetailsCartItemsContainer > div > img {
+    width: 2.5rem; /* Adjust image size */
+    margin-bottom: 0.5rem; /* Add margin for spacing */
+  }
+
+  .orderDetailsCartItemsContainer > div > a {
+    margin: 0 0 0.5rem 0; /* Adjust link margin */
+    width: 100%; /* Full width for better layout */
+    font-size: 0.85rem; /* Adjust font size */
+  }
+
+  .orderDetailsCartItemsContainer > div > span {
+    font-size: 0.85rem; /* Adjust font size */
+  }
+  .orderDetailsContainer{
+    margin-top: 59px;
+  }
+}
